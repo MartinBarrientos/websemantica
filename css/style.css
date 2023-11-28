@@ -1,0 +1,525 @@
+/*empezamos a dar estilo a la pagina index*/
+body{
+	background-color: rgba(254, 209, 189 , 0.4);
+}
+.titulo-pagina{
+	text-align: center;
+	color: #ef97a3;
+}
+/*navbar*/
+.navbar{	
+	padding-inline-start: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 4%;
+}
+.navbar-desplegable{	
+	display: none;
+    position: absolute;
+}
+.botonesNavBar{
+	display: flex;
+	justify-content: center;
+	background-color: rgba(254, 209, 189 , 0.7);
+	color: #ef97a3;
+	font-style: oblique;
+	border-radius: 15px;
+	cursor: pointer;
+	width: 7.5em;
+	height: 2em;
+	border-color: pink;
+	border-bottom-color: pink ;
+	text-decoration: none;
+	align-items: center;
+	margin: 0.5%;
+}
+.botonesNavBar:hover{
+	transform: scale(1.2);
+}
+a{
+	text-decoration: none;
+	color: #ef97a3;
+	display: flex;
+	justify-content: center;
+}
+/* Mostrar el menú desplegable al pasar el ratón sobre la sección Categorias */
+.navbar a[href="./categorias.html"]:hover + .navbar-desplegable,
+.navbar-desplegable:hover {
+	display: flex;
+	flex-direction: column;
+	margin-top: 7.75em;
+}
+.navbar a[href="./html/categorias.html"]:hover + .navbar-desplegable,
+.navbar-desplegable:hover {
+	display: flex;
+	flex-direction: column;
+	margin-top: 7.75em;
+}
+
+/* Estilos para los elementos dentro del menú desplegable */
+.navbar-desplegable a{
+	color: #ef97a3;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+/*empezamos con el contenedor donde iran las categorias y el resto*/
+.section-index{
+	display: inline-flex;
+	flex-direction: row;
+}
+#tituloCategorias{
+	text-align: center;
+	color: #ef97a3;
+	font-style:italic;
+}
+#header-index{
+	text-align: center;
+
+}
+#foto1{
+	width: 100%;
+	border-radius: 15px;
+}
+.foto-movil{
+	width: 130px;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+.portatil{
+	width: 130px;
+
+	margin-bottom: 10%;
+}
+.perifericos{
+	width: 130px;
+	margin-top: 15%;
+}
+.foto-smartdevices{
+	width: 1000px;
+	height: 300px;
+	border-radius: 15px;
+}
+#xiaomi13tpro{
+	width: 20em;
+	margin: 20px;
+	border-radius: 15px;
+}
+#logo-xiaomi{
+	width:15em;
+}
+#foto-aside2{
+	width: 168px;
+	height:700px ;	
+	padding: 15px;
+	background-color: rgba(254, 209, 189 , 0.25);
+	border-radius: 35px;
+}
+.presentacion{
+	display: inline-flex;
+	flex-direction: column;
+	width: 100%;	
+}
+.titulo-informacion{
+	text-align: center;
+	color: #ef97a3;
+}
+.parrafo{
+	color: #51615b;
+	font-size: 100%;
+	text-align: center;	
+}
+.caracteristicas-info{
+	color: #51615b;
+	font-size: 100%;
+	text-align: center;
+	font-size: 125%;
+}
+li{
+	margin: 5px;
+}
+/*seccion promocion*/
+.promocion{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 15px;
+}
+
+.contenedor-principal{
+	display: inline-flex;
+	flex-direction: column;
+}
+.categorias-section{
+	display: inline-flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.categorias{
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 20px;
+	background-color: rgba(254, 209, 189 , 0.25);
+	border-radius: 25px;	
+	margin-bottom: 1em;	
+}
+.subcategorias{
+	color: pink;
+}
+
+.div-principal{
+	display: inline-flex;
+	flex-direction: column;
+	padding: 20px;
+	background-color: rgba(254, 209, 189 , 0.25);
+	border-radius: 25px;
+}
+.contenido-promocion{
+	display: inline-flex;
+	flex-direction: row;
+	padding: 20px;
+	padding-top: 0px;
+	background-color: rgba(254, 209, 189 , 0.25);
+	border-radius: 15px;
+}
+#promocion-titulo{
+	margin: auto;
+	color: #ef97a3;
+}
+.contenedormain{
+	display: inline-flex;
+	flex-direction: row;
+	padding: 15px;
+	padding-top: 0px;
+	background-color: rgba(254, 209, 189 , 0.0);
+	border-radius: 25px;
+}
+.aside2{
+	padding: 15px;
+	padding-top: 0px;
+}
+.pie-pagina{
+	display: grid;
+    grid-template-columns: 2.7fr 1fr 1fr 1fr;
+    background-color: rgba(254, 209, 189 , 1);
+    padding: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    justify-items: center;
+}
+.pie-pagina-texto{
+	display: inline;
+	margin-left: 8%;
+	margin-right: 4%;
+}
+/*pagina de noticias*/
+.contenedor2{
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.noticias-1-2{
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 25px;
+		
+}
+.noticias-3-4{
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 25px;
+}
+.noticia{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	width: 40em;
+	height: 20em;
+	padding: 1%;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	background-color: rgba(254, 209, 189 , 0.25);
+	border-radius: 15px;
+	
+}
+
+.noticia-aside{
+	display: flex;
+	flex-direction: column;
+	justify-content:flex-start;
+	background-color: rgba(254, 209, 189 , 0.25);
+	border-radius: 1em;
+	text-align: center;
+	align-items: center;
+	margin: auto;
+	padding: 0.5%;
+}
+
+/*fotos de las noticias*/
+#snapdragon{
+	width: 50%;
+	height: 25%;
+	border-radius: 15px;
+	margin-top: 6%;
+	margin-bottom: 6%;
+	display: flex;
+}
+#amd{
+	width: 60%;
+	height: 20%;
+	border-radius: 10px;
+	margin-top: 4%;
+	margin-bottom: 6%;
+}
+#ratones{
+	width: 50%;
+	height: 35%;
+	border-radius: 15px;
+	margin-bottom: 6%;
+}
+#monitor{
+	width: 60%;
+	height: 30%;
+	border-radius: 15px;
+	margin-bottom: 6%;
+}
+#portatiles{
+	width: 100%;
+	border-radius: 15px;
+	margin-top: 10%;
+	margin-bottom: 6%;
+}
+.color-titulo{
+	
+	color: #ef97a3;
+}
+/*pagina de categorias*/
+/*contenedor con las 3 categorias*/
+.categorias-categorias{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: stretch;
+	text-align: center;
+}
+/*articulo de cada categoria*/
+.categorias-menu{
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: rgba(254, 209, 189 , 0.15);
+	border-radius: 15px;
+	margin-bottom: 4%;
+}
+/*pagina de portatiles y de moviles con misma estructura*/
+
+/*contenedor portatiles 1-2-3*/
+.portatiles123{
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 1%;
+	padding: 1%;
+	background-color: rgba(254, 209, 189 , 0.25);
+	border-radius: 20px;
+}
+/*contenedor portatiles 4-5*/
+.portatiles45{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 3%;
+	padding: 1%;
+	background-color: rgba(254, 209, 189 , 0.25);
+	border-radius: 20px;
+}
+
+/*quitamos los puntos a la ul*/
+ul{
+	padding: 0;
+	list-style:none;
+}
+/*fotos portatiles*/
+#portatil1{
+	width: 47%;
+}
+#portatil2{
+	width: 45%;
+}
+#portatil3{
+	width: 54%;
+}
+#portatil4, #portatil5{
+	width: 40%;
+}
+/*fotos moviles*/
+#movil1,#movil2,#movil3,#movil4,#movil5,#movil6{
+	width: 40%;
+}
+
+/*PÁGINA DE CONTACTO*/
+.contenedor-formulario{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.header-formulario{
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;	
+}
+.formulario{
+	display: inline-flex;
+	flex-direction: column;
+	padding: 20px;
+	padding-top: 0px;
+	background-color: rgba(254, 209, 189 , 0.25);
+	border-radius: 25px;
+	align-items: center;
+	justify-content: center;
+}
+.formulario-texto{
+	display: flex;
+	align-items: flex-start;
+	justify-content: left;
+	justify-items: left;
+	color: #ef97a3;
+}
+input, select, textarea{
+	border-radius: 0.5em;
+	border-color: pink;
+	background-color: rgba(254, 209, 189 , 0.55);
+	outline-color: #ef97a3;
+}
+/*vamos a dar estilo a nuestros botones de radio*/
+.radio{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+/*antes y despues de la seleccion*/
+input[type="radio"] {
+	appearance: none;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	padding: 3px;
+	border-radius: 100%;
+	background-clip: content-box;
+	background-color: rgba(254, 209, 189 , 1);	
+}
+input[type="radio"]:checked {
+	border: 2px solid pink;
+  	background-color: hotpink;
+}
+/*al pulsar el input este se redimensiona*/
+input[type="text"]:focus,input[type="email"]:focus, textarea:focus{
+	transform: scale(1.2);
+}
+
+/*pagina de PERIFERICOS*/
+/*forma al contenedor de los articulos*/
+.contenedor-perifericos{
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: stretch;
+	text-align: center;
+	margin-bottom: 1em;
+	padding: 1%;
+	background-color: rgba(254, 209, 189 , 0.25);
+	border-radius: 20px;
+}
+/*vamos a dar forma a los artículos de perifericos*/
+	.articulo-periferico{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+	margin-right: 1%;
+	padding-bottom: 1%;
+	background-color: rgba(254, 209, 189 , 0.25);
+	border-radius: 1em;
+	}
+/*vamos a ajustar el tamaño de las fotos de los perifericos*/
+#periferico1, #periferico3, #periferico4{
+	width: 180;
+	height: 120;
+}
+#periferico2{
+	width: 120;
+	height: 120;
+}
+.header-articulo-periferico{
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+}
+
+/*página de informacion detallada del movil*/
+/*contenedor principal*/
+.movil-promocion{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 1%;
+	padding: 1%;
+	background-color: rgba(254, 209, 189 , 0.25);
+	border-radius: 20px;
+}
+.articulo-promocion{
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+}
+.ficha-tecnica-titulo{
+	color: #ef97a3;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+}
+.video-xiaomi{
+	border-radius: 1em;
+	width: 25em;
+	height: 18em;
+}
+.caracteristicas-movil1{
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	margin-top: 0px;
+	margin-right: 5%;
+	color: #51615b;
+	font-size: 100%;
+	text-align: center;
+	font-size: 125%;
+}

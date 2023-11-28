@@ -1,0 +1,68 @@
+<!DOCTYPE HTML5>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>smartdevices</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<header>
+		<h1 class="titulo-pagina">SMART DEVICES</h1>
+		<img id="foto1" src="../img/principal.jpg">
+	</header>
+	<!--creamos la barra de navegación-->
+	<!--creamos la barra de navegación-->
+	<nav>
+		<ul class="navbar">
+			<li class="botonesNavBar"><a href="../index.html">Inicio</a></li>
+			<li class="botonesNavBar"><a href="./noticias.html">Noticias</a></li>
+			<li class="botonesNavBar">
+				<a href="./categorias.html">Categorias</a>
+				<!-- Menú desplegable -->
+				<ul class="navbar-desplegable">
+					<li class="botonesNavBar"><a href="./portatiles.html">Portátiles</a></li>
+					<li class="botonesNavBar"><a href="./moviles.html">Móviles</a></li>
+					<li class="botonesNavBar"><a href="./perifericos.html">Periféricos</a></li>
+				</ul>
+			</li>
+			<li class="botonesNavBar"><a href="./movil-informacion.html">Promoción</a></li>
+			<li class="botonesNavBar"><a href="./contacto.html">Contacto</a></li>
+		</ul>
+	</nav>
+	<section class="contenedor-formulario">
+		<header class="header-formulario">
+			<h2 class="titulo-pagina">NO TE QUEDES CON LAS DUDAS, PREGUNTA SIN COMPROMISO</h2>
+		</header>
+        <form class="formulario" method="POST">
+        	<h4 class="formulario-texto">Nombre</h4>
+	        <input type="text" name="Nombre" value="" required>        	
+	        <h4 class="formulario-texto">Apellido</h4>
+	        <input type="text" name="Apellido" value="" required>	        
+	        <h4 class="formulario-texto">Email</h4>
+	        <input type="email" name="email" value="" required>
+	        <h4 class="formulario-texto">Móvil (opcional)</h4>
+	        <input type="text" name="movil" value="">
+	        <h4 class="formulario-texto">Preferencia de contacto</h4>
+	        <div class="radio">
+		        <input type="radio" name="preferencia" value="email" checked><p class="formulario-texto">Email</p>
+				<input type="radio" name="preferencia" value="movil"><p class="formulario-texto">Móvil</p>
+			</div>
+	        <h4 class="formulario-texto">Motivo de contacto</h4>
+	        <select name="motivo" required><option value="Reclamación">Reclamación</option><option value="Consulta">Consulta</option><option value="otro">Otro</option></select>
+	        <br>	            
+            <textarea name="consulta" value="Escriba su consulta" rows="4" cols="40" required>Escribir aquí..</textarea>
+        	
+            <br>
+            <button class="botonesNavBar" type="submit" name="enviar" value="submit">enviar</button>
+        </form>
+    </section>
+	<footer class="pie-pagina">
+		<p class="pie-pagina-texto" >Todas las imagenes son utilizadas con fines educativos y conservan todos los derechos de autor</p>
+		<p class="pie-pagina-texto" > Política de privacidad </p>
+		<p class="pie-pagina-texto" > Terminos de usuario </p>
+		<p class="pie-pagina-texto" > Tipo de Licencia </p>
+	</footer>
+
+</body>
+</html>
