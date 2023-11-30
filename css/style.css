@@ -13,6 +13,7 @@ body{
 	flex-direction: row;
 	justify-content: center;
 	margin-bottom: 4%;
+	flex-wrap: wrap;
 }
 .navbar-desplegable{	
 	display: none;
@@ -37,6 +38,7 @@ body{
 .botonesNavBar:hover{
 	transform: scale(1.2);
 }
+/*links*/
 a{
 	text-decoration: none;
 	color: #ef97a3;
@@ -70,6 +72,26 @@ a{
 	display: inline-flex;
 	flex-direction: row;
 }
+.categorias-section{
+	display: inline-flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.categorias{
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 20px;
+	background-color: rgba(254, 209, 189 , 0.25);
+	border-radius: 25px;	
+	margin-bottom: 1em;	
+}
+.subcategorias{
+	color: pink;
+}
 #tituloCategorias{
 	text-align: center;
 	color: #ef97a3;
@@ -79,27 +101,26 @@ a{
 	text-align: center;
 
 }
+/*Fotos de la pagina index*/
 #foto1{
 	width: 100%;
 	border-radius: 15px;
 }
 .foto-movil{
-	width: 130px;
+	width: 7em;
 	margin-top: 10%;
 	margin-bottom: 10%;
 }
 .portatil{
-	width: 130px;
-
+	width: 7em;
 	margin-bottom: 10%;
 }
 .perifericos{
-	width: 130px;
+	width: 7em;
 	margin-top: 15%;
 }
 .foto-smartdevices{
-	width: 1000px;
-	height: 300px;
+	width: 100%;	
 	border-radius: 15px;
 }
 #xiaomi13tpro{
@@ -117,6 +138,7 @@ a{
 	background-color: rgba(254, 209, 189 , 0.25);
 	border-radius: 35px;
 }
+/*zona de presentacion de la pagina*/
 .presentacion{
 	display: inline-flex;
 	flex-direction: column;
@@ -149,32 +171,20 @@ li{
 	text-align: center;
 	padding: 15px;
 }
-
+/*
 .contenedor-principal{
 	display: inline-flex;
 	flex-direction: column;
-}
-.categorias-section{
+}*/
+/*contenedor con la seccion de presentacion, promocion y la foto en el aside2*/
+.contenedormain{
 	display: inline-flex;
-	flex-direction: column;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
+	flex-direction: row;
+	padding: 15px;
+	padding-top: 0px;
+	background-color: rgba(254, 209, 189 , 0.0);
+	border-radius: 25px;
 }
-.categorias{
-	display: inline-flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-	padding: 20px;
-	background-color: rgba(254, 209, 189 , 0.25);
-	border-radius: 25px;	
-	margin-bottom: 1em;	
-}
-.subcategorias{
-	color: pink;
-}
-
 .div-principal{
 	display: inline-flex;
 	flex-direction: column;
@@ -182,6 +192,7 @@ li{
 	background-color: rgba(254, 209, 189 , 0.25);
 	border-radius: 25px;
 }
+
 .contenido-promocion{
 	display: inline-flex;
 	flex-direction: row;
@@ -194,18 +205,12 @@ li{
 	margin: auto;
 	color: #ef97a3;
 }
-.contenedormain{
-	display: inline-flex;
-	flex-direction: row;
-	padding: 15px;
-	padding-top: 0px;
-	background-color: rgba(254, 209, 189 , 0.0);
-	border-radius: 25px;
-}
+
 .aside2{
 	padding: 15px;
 	padding-top: 0px;
 }
+/*FOOTER CON GRID*/
 .pie-pagina{
 	display: grid;
     grid-template-columns: 2.7fr 1fr 1fr 1fr;
@@ -220,6 +225,7 @@ li{
 	margin-left: 8%;
 	margin-right: 4%;
 }
+
 /*pagina de noticias*/
 .contenedor2{
 	display: inline-flex;
